@@ -1,0 +1,171 @@
+body { 
+  margin: 0; 
+  overflow-x: hidden; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+circle { 
+  stroke: #fff; 
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+line { 
+  stroke: #999; 
+  stroke-opacity: 0.6; 
+}
+
+text {
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+/* --- Input and Button Styling --- */
+#query-section {
+  margin-top: 1rem;
+}
+
+select, input[type="text"], button {
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+button#run-query-btn {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button#run-query-btn:hover {
+  background-color: #45a049;
+}
+
+#info-message {
+  margin-top: 1rem;
+  color: #d9534f;
+}
+
+#character-list {
+  margin-top: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* --- Node Coloring Based on Label --- */
+.Character {
+  fill: rgb(133, 220, 249);
+}
+
+.Alignment{
+  fill: rgb(109, 237, 109);
+}
+.EyeColor{
+  fill: rgb(248, 248, 108);
+}
+.HairColor{
+  fill:  rgb(244, 157, 187);
+}
+.GSM{
+  fill:  rgb(252, 135, 85);
+}
+.Sex{
+  fill:  rgba(175, 133, 218, 0.818);
+}
+
+.header-background {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  width: 100%;
+  padding-bottom: 20px;
+  
+ 
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Section with background image --- */
+.query-section-background {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.85;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Inside Query Box --- */
+.query-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+select, input[type="text"], input[type="button"] {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+input#run-query-btn {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input#run-query-btn:hover {
+  background-color: #45a049;
+}
+
+/* --- Error Messages --- */
+#info-message {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+#query-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#character-list {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* --- SVG Graph Section --- */
+.graph-section {
+  background: #ffffff;
+  padding: 10px 0;
+}
+
+svg { 
+  width: 100vw; 
+  height: 100vh; 
+  background: #ffffff;
+  border-top: 2px solid #ccc;
+  border-radius: 10px;
+}
+circle { 
+  stroke: #fff; 
+  stroke-width: 1.5px;
+}
+line { 
+  stroke: #908d8d; 
+  stroke-opacity: 0.6; 
+}

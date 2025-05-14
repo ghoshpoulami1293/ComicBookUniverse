@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the World of Comic Books</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <script src="https://d3js.org/d3.v7.min.js" defer></script>
+  <script src="assets/js/graph.js" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 style="text-align:center; font-style:italic; font-weight:bold; margin-top:20px;">
+      Welcome to the World of Comic Books
+    </h1>
+  </header>
+
+  <section class="query-section-background">
+    <div class="query-box">
+      <select id="query-dropdown">
+        <option value="">-- Select Query Type --</option>        
+        <option>Discover 25 Alive Characters sharing Same Alignment</option>
+        <option>Discover features of a Comic Book Character</option>
+        <option>Top 25 Characters sharing Same GSM Category</option>
+        <option>Top 25 Characters by Universe</option>
+        <option>Top 25 Characters and their Features by Universe</option>
+        <option>Top 25 Characters and their Features by Eye Color</option>
+        <option>Top 25 Characters and their Features by Hair Color</option>
+        <option>Top 25 Characters and their Features by Sex</option>
+        <option>Top 25 Characters and their Features First Appearing in a Year</option>   
+      </select>
+
+      <span id="parameter-container" style="margin-left:10px;"></span>
+      <input type="text" id="manual-query-input" placeholder="Or Enter Manual Cypher Query">
+      <input type="button" value="Run Query" id="run-query-btn">
+    </div>
+  </section>
+  
+  <section class="response-section">
+    <div id="info-message"></div>
+    <h2 id="query-title"></h2>
+    <div id="character-list"></div>
+  </section>
+
+  <!-- Graph Section -->
+  <section class="graph-section">
+    <svg></svg>
+  </section>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 # ComicBookUniverse
 
 
-This project is designed to create an application to visualize graphs that help explore comicbook characters and their features.
+This project is designed to create an application to visualize graphs utilizing Neo4j that help explore comicbook characters and their features.
 
 ## 1. Data Choice 
 
